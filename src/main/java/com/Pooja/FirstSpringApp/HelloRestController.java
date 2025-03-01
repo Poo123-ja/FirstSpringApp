@@ -1,7 +1,7 @@
 
 package com.Pooja.FirstSpringApp;
 
-import com.Pooja.FirstSpringApp.User;
+import com.Pooja.DTO.User;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -44,5 +44,10 @@ public class HelloRestController {
         return "Hello " + user.getFirstName() + " " + user.getLastName() + " !";
     }
 
+    @PutMapping("/put/{firstName}")
+    public String sayHello(@PathVariable String firstName,
+                           @RequestParam(value = "lastName") String lastName) {
+        return "Hello " + firstName + " " + lastName + " !";
+    }
 
 }
