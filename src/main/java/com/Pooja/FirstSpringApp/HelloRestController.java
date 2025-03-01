@@ -10,6 +10,7 @@ public class HelloRestController {
 
     @GetMapping()
     public String sayHello() {
+
         return "Hello From Pooja - GET REGUEST ";
     }
     @PutMapping()
@@ -19,11 +20,19 @@ public class HelloRestController {
     }
     @PostMapping()
     public String postHello(){
+
         return "Hello from Pooja -POST REQUEST";
     }
     @DeleteMapping()
     public String deleteHello(){
+
         return "Hello from Pooja-DELETE REQUEST";
     }
+
+    @GetMapping("/query")
+    public String sayHello(@RequestParam(value = "name") String name) {
+        return "Hello " + name + " !!";
+    }
+
 
 }
