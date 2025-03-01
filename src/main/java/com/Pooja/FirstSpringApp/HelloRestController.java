@@ -1,7 +1,7 @@
 
 package com.Pooja.FirstSpringApp;
 
-import com.Pooja.FirstSpringApp.User;
+import com.Pooja.DTO.User;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
