@@ -39,5 +39,10 @@ public class HelloRestController {
         return "Hello " + name + " !";
     }
 
+    @PostMapping("/post")
+    public String sayHello(@RequestBody User user) {
+        return "Hello " + user.getFirstName() + " " + user.getLastName() + " !";
+    }
+
 
 }

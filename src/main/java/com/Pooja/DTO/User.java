@@ -1,4 +1,4 @@
-package com.Pooja.FirstSpringApp;
+package com.Pooja.DTO;
 
 public class User {
     private String firstName;
@@ -8,13 +8,18 @@ public class User {
 
     }
     public void setFirstName(String firstName){
+
         this.firstName=firstName;
     }
-    public String getLastName(){
+    public String getLastName()
+    {
+
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    public void setLastName(String lastName)
+
+    {
         this.lastName = lastName;
     }
 }
